@@ -1,0 +1,97 @@
+.main-container {
+  background-color: #1e1e2f;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border: 1px solid blue;
+  padding: 50px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.CPU-box,
+.memory-box {
+  background-color: #2a2a3c;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  max-width: 500px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CPU-usage-percent,
+.memory-usage-percent {
+  font-family: "Inter", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  border-bottom: 2px solid #3d3d50;
+  color: #ffb74d;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.CPU-cores {
+  text-align: center;
+  color: #c0c0c0;
+  font-size: 36px;
+  font-family: "Inter", sans-serif;
+  padding: 27px 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.memory-data {
+  text-align: center;
+  color: #c0c0c0;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  padding: 20px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.box-label {
+  color: #00aeef;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  padding: 50px;
+}
+
+.refresh-button {
+  margin-top: 40px;
+  padding: 16px 40px;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(90deg, #00aeef 0%, #1e90ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 174, 239, 0.15);
+  transition: background 0.2s, transform 0.2s;
+}
+.refresh-button:hover {
+  background: linear-gradient(90deg, #1e90ff 0%, #00aeef 100%);
+  transform: translateY(-2px) scale(1.03);
+}
